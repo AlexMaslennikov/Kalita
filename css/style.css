@@ -1,0 +1,475 @@
+/*
+
+====================================================
+                Общие стили
+====================================================
+
+*/
+
+body {
+    font-family: 'DejaVuSerif-webfont', Times, serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #31353e;
+    font-style: normal;
+}
+
+.container {
+    max-width: 960px;
+    min-width: 320px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+p {}
+
+h1 {}
+
+h2,
+h3 {}
+
+p {}
+
+@font-face {
+    font-family: 'dejavu_serifbook';
+    src: url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.eot');
+    src: url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.woff') format('woff'), url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.ttf') format('truetype'), url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.svg#dejavu_serifbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 
+------------------------------------
+            Стили для кнопок
+------------------------------------
+*/
+
+
+/*
+------------------------------------
+            Clearfix
+------------------------------------
+*/
+
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: "";
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/*
+
+====================================================
+                Header
+====================================================
+
+*/
+
+.header-main {
+    min-height: 90px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.header-top {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.header-top a {
+    color: #b28a48;
+    text-decoration: none;
+}
+
+a.phone-number {
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+    padding-right: 50px;
+}
+
+.feedback {
+    padding-left: 35px;
+}
+
+.feedback a {
+    margin-left: 40px;
+}
+
+.dotted {
+    border-bottom: 1px dotted #b28a48;
+}
+
+.header-bottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 110px;
+    height: 165px;
+    background: #fff url("../img/logo.png") no-repeat center;
+    border-bottom: 3px solid #b28a48;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 5px #000;
+}
+
+ul.navigation {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+ul.navigation li:nth-child(1) a {
+    padding-left: 0;
+}
+
+ul.navigation li:nth-child(4) a {
+    padding-left: 0;
+}
+
+ul.navigation li:nth-child(5) a {
+    padding-right: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navigation li:nth-child(3) {
+    padding-right: 33%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}
+
+.dropdown-backdrop {
+    position: static;
+}
+
+.navmenu {
+    width: 200px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar-toggle {
+    margin-top: 25px;
+    background: #fff;
+}
+
+
+/*
+
+====================================================
+                Content
+====================================================
+
+*/
+
+
+/*
+------------------------------------
+            Promo
+------------------------------------
+*/
+
+.promo {
+    max-height: 500px;
+    height: 500px;
+    background: url("../img/promo-bg.jpg") no-repeat top center;
+    color: #fff;
+}
+
+.promo .row {
+    padding-top: 100px;
+    text-align: center;
+    height: 500px;
+}
+
+.owl-carousel {
+    max-height: 500px;
+    position: relative;
+}
+
+.owl-paginator {
+    display: none !important;
+}
+
+.owl-item {
+    max-height: 500px;
+}
+
+
+/* .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+#owl-demo .owl-prev {
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+#owl-demo .owl-next {
+    position: absolute;
+    top: 250px;
+    right: 0;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.item {
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.item-link {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+    height: 500px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding-top: 150px;
+}
+
+.item-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-inside {
+    width: 280px;
+    height: 310px;
+    border: 7px solid #b28a48;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.item-descr {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+
+/*
+------------------------------------
+            Founds
+------------------------------------
+*/
+
+.founds-wrapper {
+    max-width: 470px;
+}
+
+.founds-item {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    max-width: 240px;
+    height: 170px;
+}
+
+.item-open {
+    display: none;
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+}
+
+.cards-number {}
+
+.founds-item:hover {
+    background: #f6f6f6;
+}
+
+.founds-item:hover .item-open {
+    background: #f6f6f6;
+    display: block;
+    z-index: 10;
+}
+
+
+/*
+------------------------------------
+            News
+------------------------------------
+*/
+
+.news {
+    background: url("../img/news-bg.jpg") no-repeat top center;
+    min-height: 390px;
+    color: #fff;
+}
+
+.news .slider {
+    height: 240px;
+}
+
+.news-notice {
+    text-align: center;
+}
+
+#owl-demo2 .owl-prev {
+    position: absolute;
+    top: 100px;
+    left: -30px;
+}
+
+#owl-demo2 .owl-next {
+    position: absolute;
+    top: 100px;
+    right: -30px;
+}
+
+
+/*
+------------------------------------
+            Partners
+------------------------------------
+*/
+
+.partners {
+    min-height: 510px;
+}
+
+
+/*
+------------------------------------
+            Rent
+------------------------------------
+*/
+
+.rent {
+    min-height: 560px;
+}
+
+#owl-demo3 .rent-item:hover {
+    background: none;
+}
+
+.container-rent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rent-item {
+    width: 100%;
+    min-height: 450px;
+    min-width: 280px;
+    background-color: #000;
+    opacity: 0.4;
+    position: relative;
+}
+
+#owl-demo3 .iris {
+    background: url("../img/iris.jpg") no-repeat;
+}
+
+/*#owl-demo3 .iris:hover {
+    background-position: 0 -225px;
+}*/
+
+#owl-demo3 .iris:hover {
+    animation: rent-popup 1s ease;
+    animation-fill-mode: both;
+}
+
+#owl-demo3 .monolit {
+    background: url("../img/monolit.jpg") no-repeat;
+}
+
+/*#owl-demo3 .monolit:hover {
+    background-position: 0 -225px;
+}*/
+
+#owl-demo3 .monolit:hover {
+    background-position: 0 -225px;
+}
+
+.rent-popup {
+    height: 225px;
+    background: #fff;
+    position: absolute;
+    bottom: -225px;
+    left: 0;
+    width: 100%;
+}
+
+/*#owl-demo3 a:hover .rent-popup {
+    bottom: 0;
+}*/
+
+#owl-demo3 a:hover .rent-popup {
+    animation: rent-words 1s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes rent-popup {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -225px;
+    }
+}
+
+@keyframes rent-words {
+    from {
+        bottom: -225px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+
+/*
+
+====================================================
+                Footer
+====================================================
+
+*/
+
+.footer-main {}
