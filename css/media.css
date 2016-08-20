@@ -59,25 +59,40 @@
     }
 }
 
-
-
-
-
-
-@media (min-width: 0px) {
-  .navbar-toggle,
-  #user_drop {
-    display: block;
-  }
+@media (min-height: 769px) {
+    div.navbar {
+        display: none !important;
+    }
 }
+
+
+
+
+
+
+
+// @media (min-width: 0px) {
+//   .navbar-toggle,
+//   #user_drop {
+//     display: block;
+//   }
+// }
 
 @media (max-width: 768px) {
   body {
     padding: 0;
   }
   .navbar {
-    right: auto;
     background: none;
     border: none;
   }
+  #owl-demo2 .owl-nav.disabled {
+    display: none;
+}
+}
+
+@media (max-width: 990px) {
+    .feedback a {
+        margin-left: 15px;
+    }
 }
